@@ -1,0 +1,18 @@
+.page-not-found {
+  font-family: "nissan_brandbold";
+  color: #c30c29;
+  text-align: center; }
+  .page-not-found h3 {
+    font-size: 35px;
+    margin: 30px 0; }
+    @media (max-width: 991px) {
+      .page-not-found h3 {
+        font-size: 22px;
+        margin: 30px 0 40px 0; } }
+  .page-not-found h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 30px 0; }
+    @media (max-width: 991px) {
+      .page-not-found h1 {
+        margin: 30px 0 80px 0; } }

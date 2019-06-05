@@ -1,0 +1,68 @@
+.formInterest {
+  display: none; }
+
+.screen-reader-response {
+  display: none; }
+
+.form-interest {
+  background: #c30c29;
+  padding: 40px;
+  float: left;
+  position: relative;
+  bottom: 10px;
+  display: none; }
+  @media (max-width: 767px) {
+    .form-interest {
+      padding: 20px;
+      bottom: 76px; } }
+  .form-interest p {
+    font-family: "nissan_brandlight";
+    font-size: 15px;
+    color: #ffffff; }
+  .form-interest h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "nissan_brandbold";
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 24px; }
+  .form-interest h3 {
+    text-align: center;
+    font-family: "nissan_brandlight";
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 24px;
+    margin-bottom: 30px; }
+  .form-interest .form-group {
+    font-family: "nissan_brandregular";
+    font-size: 14px;
+    color: #777777; }
+    .form-interest .form-group .wpcf7-not-valid-tip {
+      color: #ffffff;
+      font-family: "nissan_brandlight"; }
+    .form-interest .form-group input {
+      border: none;
+      border-radius: 0; }
+    .form-interest .form-group select {
+      border: none;
+      border-radius: 0; }
+  .form-interest .store {
+    background: #c9253f;
+    color: #ffffff;
+    padding: 15px; }
+    .form-interest .store p {
+      font-family: "nissan_brandlight";
+      font-size: 14px;
+      margin: 0; }
+  .form-interest .btn-enviar input {
+    background: #343434;
+    font-family: "nissan_brandbold";
+    color: #fefefe;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    text-transform: uppercase; }
+    .form-interest .btn-enviar input::after {
+      position: relative;
+      left: 10px;
+      content: url("./images/setabranca.png"); }

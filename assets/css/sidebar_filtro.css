@@ -1,0 +1,112 @@
+@media (max-width: 991px) {
+  .sidebar.filter {
+    background: #343434;
+    padding: 20px 25px 20px 25px; } }
+
+.sidebar.filter .head {
+  padding: 0 0 20px 0; }
+  @media (max-width: 991px) {
+    .sidebar.filter .head {
+      cursor: pointer;
+      padding: 0; } }
+  .sidebar.filter .head h4 {
+    font-family: "nissan_brandbold";
+    margin: 0;
+    font-size: 22px;
+    color: #343434;
+    text-transform: uppercase;
+    line-height: 23px;
+    padding: 0 0 0 20px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .sidebar.filter .head h4 {
+        font-size: 18px; } }
+    @media (max-width: 991px) {
+      .sidebar.filter .head h4 {
+        color: #fff;
+        font-size: 18px;
+        line-height: 16px;
+        padding: 0 0 0 10px; }
+        .sidebar.filter .head h4::after {
+          float: right;
+          content: url("./images/setabrancabaixo.png"); } }
+
+.sidebar.filter form {
+  padding: 7px 0 0 0; }
+  @media (max-width: 991px) {
+    .sidebar.filter form {
+      padding: 20px 0 0 0;
+      display: none; } }
+  .sidebar.filter form .form-group {
+    background: #eeeeee;
+    padding: 19px 20px;
+    margin: 0 0 10px 0; }
+    @media (max-width: 991px) {
+      .sidebar.filter form .form-group {
+        background: #343434;
+        padding: 5px 10px; } }
+    .sidebar.filter form .form-group select {
+      font-family: "nissan_brandregular";
+      color: #777777;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      border-radius: initial;
+      padding: 0 10px; }
+      @media (max-width: 991px) {
+        .sidebar.filter form .form-group select {
+          height: 50px;
+          font-size: 16px; } }
+      .sidebar.filter form .form-group select.custom-select {
+        background-image: url("./images/setavermelha.png");
+        background-repeat: no-repeat;
+        background-size: 10px 8px; }
+      .sidebar.filter form .form-group select option {
+        border: #eee; }
+      .sidebar.filter form .form-group select#Cidade option[data-estado] {
+        display: none; }
+    .sidebar.filter form .form-group.btn-filter button {
+      font-family: "nissan_brandregular";
+      background: #c30c29;
+      color: #fefefe;
+      width: 100%;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 10px; }
+      @media (max-width: 991px) {
+        .sidebar.filter form .form-group.btn-filter button {
+          height: 55px; } }
+      .sidebar.filter form .form-group.btn-filter button::after {
+        position: relative;
+        left: 10px;
+        content: url("./images/setabranca.png"); }
+
+.head-search-mobile {
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+  display: none; }
+  @media (max-width: 991px) {
+    .head-search-mobile {
+      display: block; } }
+  .head-search-mobile input {
+    width: 90%;
+    border: none;
+    font-family: "nissan_brandregular";
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 17px;
+    padding: 0 0 0 15px; }
+  .head-search-mobile .btn-search {
+    background: url("./images/search.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    width: 8%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0;
+    position: relative;
+    top: 5px; }

@@ -1,0 +1,655 @@
+.list-cars {
+  display: block;
+  float: left;
+  width: 100%;
+  font-family: "nissan_brandregular";
+  @media (max-width: 991px) {
+    margin: 0 0 30px 0;
+  }
+  .head-list {
+    @media (max-width: 991px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+    }
+    .head {
+      width: 33.333%;
+      float: left;
+      display: inline-block;
+      color: #777777;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 5px 0 9px 0;
+      @media (min-width: 992px) and (max-width: 1199px) {
+        font-size: 13px;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      &.show-number {
+        @media (max-width: 991px) {
+          height: 50px;
+          text-align: center;
+          span {
+            line-height: 30px;
+            @media (max-width: 267px) {
+              line-height: 0px;
+            }
+          }
+          @media (max-width: 267px) {
+            height: 58px;
+          }
+        }
+      }
+      &.search {
+        text-align: center;
+        input {
+          width: 60%;
+          border-bottom: 1px solid #fff;
+          position: relative;
+          bottom: 13px;
+          @media (min-width: 992px) and (max-width: 1199px) {
+            width: 70%;
+          }
+        }
+        .btn-search {
+          background: url("./images/search.png");
+          background-repeat: no-repeat;
+          background-size: 22px 22px;
+          background-position: center;
+          width: 30px;
+          height: 30px;
+          border: none;
+          outline: none;
+          position: relative;
+          bottom: 5px;
+        }
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+      &.order {
+        @media (max-width: 991px) {
+          padding: 5px;
+          background: #eeeeee;
+          margin: 10px 0;
+        }
+        select {
+          @media (max-width: 991px) {
+            width: 100%;
+            background-color: #fff !important;
+            background-position-x: 96% !important;
+            height: 50px;
+            font-size: 17px;
+            padding: 0 30px;
+          }
+        }
+        .ordem {
+          @media (max-width: 991px) {
+            display: none;
+          }
+        }
+        select {
+          background: transparent;
+          border: none;
+          text-transform: uppercase;
+          color: #777777;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: url("./images/setavermelha.png");
+          background-repeat: no-repeat;
+          background-size: 10px 8px;
+          background-position: right;
+          padding: 0 20px;
+          min-width: 85px;
+          option {
+            background: #fff;
+            color: #777777;
+            text-transform: uppercase;
+          }
+        }
+      }
+      input {
+        background: transparent;
+        border: none;
+        text-transform: uppercase;
+        color: #777777;
+      }
+    }
+  }
+
+  .showcase {
+    display: block;
+    float: left;
+    width: 100%;
+    .product {
+      float: left;
+      width: 100%;
+      background: #eeeeee;
+      min-height: 150px;
+      margin: 0 0 10px 0;
+      padding: 8px;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #777777;
+      @media (max-width: 991px) {
+        display: block;
+        height: auto;
+        max-height: initial;
+      }
+      .image {
+        max-width: 310px;
+        display: inline-block;
+        overflow: hidden;
+        max-height: 229px;
+        background: #fff;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        @media (max-width: 991px) {
+          width: 100%;
+          max-width: 100%;
+          max-height: 100%;
+        }
+        img {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+      &.negociacao {
+        background: #f9f8f8;
+        .image {
+          .status {
+            background: url("./images/emnegociacao.png");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: center;
+            position: absolute;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            max-width: 310px;
+            max-height: 179px;
+            @media (min-width: 992px) and (max-width: 1199px) {
+              max-width: 245px;
+            }
+            @media (max-width: 991px) {
+              background-size: 55%;
+              width: 94%;
+              max-width: 100%;
+              max-height: 365px;
+            }
+            @media (max-width: 767px) {
+              width: 75%;
+              left: 12%;
+              max-height: 6%;
+            }
+          }
+          img {
+            opacity: 0.2;
+          }
+        }
+        .description {
+          .info {
+            opacity: 0.2;
+          }
+          > .local {
+            opacity: 0.2;
+          }
+          .seal {
+            @media (max-width: 991px) {
+              display: block;
+            }
+            img {
+              display: none;
+            }
+          }
+          .value {
+            top: 10px;
+            position: relative;
+            @media (max-width: 1199px) {
+              top: 0px;
+            }
+            opacity: 0.2;
+          }
+          .buttons {
+            bottom: 5px;
+            .detail {
+              pointer-events: none;
+              cursor: not-allowed;
+              opacity: 0.2;
+            }
+          }
+          .share {
+            bottom: 0px;
+            cursor: not-allowed;
+            opacity: 0.2;
+            a {
+              pointer-events: none;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+      &.vendido {
+        background: #f9f8f8;
+        .image {
+          .status {
+            background: url("./images/vendido.png");
+            background-repeat: no-repeat;
+            background-size: 69%;
+            background-position: center;
+            position: absolute;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            max-width: 310px;
+            max-height: 179px;
+            @media (min-width: 992px) and (max-width: 1199px) {
+              max-width: 245px;
+            }
+            @media (max-width: 991px) {
+              background-size: 45%;
+              width: 94%;
+              max-width: 100%;
+              max-height: 365px;
+            }
+            @media (max-width: 767px) {
+              width: 75%;
+              left: 12%;
+              max-height: 6%;
+            }
+          }
+          img {
+            opacity: 0.2;
+          }
+        }
+        .description {
+          .info {
+            opacity: 0.2;
+          }
+          > .local {
+            opacity: 0.2;
+          }
+          .seal {
+            @media (max-width: 991px) {
+              display: block;
+            }
+            img {
+              display: none;
+            }
+          }
+          .value {
+            top: 10px;
+            position: relative;
+            @media (max-width: 1199px) {
+              top: 0px;
+            }
+            opacity: 0.2;
+          }
+          .buttons {
+            bottom: 5px;
+            .detail {
+              opacity: 0.2;
+              pointer-events: none;
+              cursor: not-allowed;
+            }
+          }
+          .share {
+            bottom: 0px;
+            cursor: not-allowed;
+            opacity: 0.2;
+            a {
+              pointer-events: none;
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+      .description {
+        padding-left: 25px;
+        display: inline-block;
+        width: 555px;
+        @media (max-width: 991px) {
+          width: 100%;
+          padding: 15px;
+        }
+        @media (max-width: 767px) {
+          padding: 10px 15px 5px 15px;
+          position: relative;
+        }
+        @media (max-width: 291px) {
+          padding: 10px 5px 5px 5px;
+        }
+        .info {
+          display: block;
+          padding: 5px 0 0 0;
+          .title {
+            font-family: "nissan_brandregular";
+            font-size: 23px;
+            text-transform: uppercase;
+            display: block;
+            line-height: 18px;
+            .red {
+              font-family: "nissan_brandbold";
+              color: #c71444;
+            }
+          }
+          .desc {
+            font-size: 12px;
+            display: inline-block;
+          }
+        }
+        .value {
+          display: inline-block;
+          line-height: 21px;
+          @media (max-width: 1199px) {
+            width: 100%;
+            display: block;
+          }
+          @media (max-width: 767px) {
+            position: relative;
+            bottom: 5px;
+            margin-top: 15px;
+          }
+          .first {
+            @media (max-width: 1199px) {
+              width: 57%;
+              display: inline-block;
+            }
+            @media (max-width: 991px) {
+              width: 39%;
+            }
+            @media (max-width: 767px) {
+              width: 47%;
+            }
+            .of {
+              text-decoration: line-through;
+              font-size: 16px;
+              display: block;
+              @media (max-width: 367px) {
+                font-size: 15px;
+              }
+            }
+            .descount {
+              display: block;
+              color: #c71444;
+              font-family: "nissan_brandbold";
+              @media (max-width: 367px) {
+                font-size: 15px;
+                white-space: pre-line;
+              }
+            }
+          }
+          .total {
+            color: #c71444;
+            font-size: 27px;
+            font-family: "nissan_brandbold";
+            white-space: nowrap;
+            @media (max-width: 1199px) {
+              width: 40%;
+              display: inline-block;
+            }
+            @media (max-width: 767px) {
+              width: 47%;
+            }
+            @media (max-width: 429px) {
+              font-size: 23px;
+            }
+            @media (max-width: 367px) {
+              font-size: 20px;
+            }
+            @media (max-width: 275px) {
+              font-size: 17px;
+            }
+            strong {
+              font-size: 16px;
+              @media (max-width: 1199px) {
+                display: block;
+              }
+              @media (max-width: 767px) {
+                font-size: 15px;
+              }
+              @media (max-width: 500px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        > .local {
+          display: inline-block;
+          font-size: 13px;
+          margin-top: 10px;
+          width: 75%;
+          .color {
+            display: block;
+          }
+        }
+        .buttons {
+          display: inline-block;
+          padding: 0 0 0 28px;
+          position: relative;
+          bottom: 15px;
+          @media (max-width: 1199px) {
+            display: inline-block;
+            width: 75%;
+            padding: 0;
+            bottom: 0px;
+          }
+          @media (max-width: 767px) {
+            display: block;
+            width: 100%;
+            margin-top: 7px;
+          }
+          button {
+            border: none;
+            font-family: "nissan_brandregular";
+            text-transform: uppercase;
+            &.interest {
+              background: #c30c29;
+              padding: 10px 10px 10px 5px;
+              color: #fff;
+              width: 170px;
+              font-size: 13px;
+              margin-right: 5px;
+              @media (max-width: 767px) {
+                width: 65%;
+                margin: 0px;
+                height: 50px;
+              }
+              &::after {
+                position: relative;
+                left: 10px;
+                content: url("./images/setabranca.png");
+                @media (max-width: 291px) {
+                  display: none;
+                }
+              }
+            }
+            &.detail {
+              background: #ffffff;
+              color: #777777;
+              font-size: 11px;
+              padding-right: 15px;
+              width: 122px;
+              height: 39px;
+              line-height: 13px;
+              position: relative;
+              bottom: 7px;
+              // -ms-bottom: -5px;
+              @-moz-document url-prefix() {
+                bottom: -5px;
+                font-size: 11px;
+                height: 40px;
+              }
+              @media (max-width: 767px) {
+                width: 33%;
+                position: relative;
+                top: 5px;
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                padding: 0 15px;
+                height: 50px;
+                font-size: 10px;
+              }
+              @media (max-width: 433px) {
+                padding: 0 5px;
+              }
+              @media (max-width: 372px) {
+                top: -8px;
+              }
+              &::before {
+                position: relative;
+                top: 2px;
+                margin: 0 5px;
+                float: left;
+                content: url("./images/detail.png");
+                @media (max-width: 767px) {
+                  float: initial;
+                }
+                @media (max-width: 372px) {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .seal {
+          display: inline-block;
+          position: relative;
+          bottom: 63px;
+          left: 70px;
+          @media (max-width: 1199px) {
+            bottom: 15px;
+            left: 30px;
+          }
+          @media (max-width: 991px) {
+            left: 72px;
+          }
+          @media (max-width: 767px) {
+            position: absolute;
+            top: 15px;
+            left: 85%;
+          }
+          img {
+            width: 70%;
+          }
+        }
+        .share {
+          width: 100%;
+          text-align: right;
+          position: relative;
+          bottom: 10px;
+          padding: 0 25px 0 0;
+          @media (max-width: 1199px) {
+            width: 24%;
+            top: 10px;
+            display: inline-block;
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+            padding: 5px 0 5px 0;
+            text-align: center;
+          }
+          span {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            bottom: 10px;
+            @media (max-width: 1199px) {
+              display: none;
+            }
+          }
+          .whatsapp {
+            background: url("./images/whats.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+          }
+          .facebook {
+            background: url("./images/facebook.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .see-more {
+    width: 100%;
+    text-align: right;
+    float: left;
+    padding: 20px 0 0 0;
+
+    a {
+      width: 280px;
+      background: #c30c29;
+      font-family: "nissan_brandbold";
+      font-size: 14px;
+      color: #fefefe;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      border: none;
+      padding: 10px 75px;
+      @media (max-width: 991px) {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      &.prev {
+        margin-right: 5px;
+        &::before {
+          position: relative;
+          right: 15px;
+          content: url("./images/setabrancareturn.png");
+        }
+      }
+      &.next {
+        &::after {
+          position: relative;
+          left: 15px;
+          content: url("./images/setabranca.png");
+        }
+      }
+    }
+  }
+  .texto-legal {
+    font-size: 11px;
+    color: #777777c4;
+    float: left;
+    display: block;
+    margin-top: 50px;
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+  .message {
+    background: #c30c29;
+    color: #fff;
+    font-family: "nissan_brandbold";
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+  }
+}

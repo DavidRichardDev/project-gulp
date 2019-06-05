@@ -1,0 +1,97 @@
+footer {
+  background: #000000;
+  font-family: "nissan_brandregular"; }
+  footer ul {
+    margin: 0 0 15px 0; }
+    @media (max-width: 767px) {
+      footer ul {
+        margin: 15px 0 15px 0; } }
+    footer ul li {
+      color: #ffffff;
+      line-height: 30px; }
+      footer ul li a {
+        color: #c1c1c1;
+        font-size: 13px;
+        text-decoration: none; }
+        footer ul li a:hover {
+          color: #c1c1c1 !important;
+          text-decoration: none; }
+  footer .one {
+    padding: 20px 0 0 0; }
+    @media (max-width: 767px) {
+      footer .one {
+        padding: 0px; } }
+    @media (max-width: 767px) {
+      footer .one .col-12 {
+        border-bottom: 1px solid #1c1c1c; } }
+    footer .one ul li:first-child {
+      font-family: "nissan_brandbold";
+      text-transform: uppercase; }
+    @media (max-width: 767px) {
+      footer .one ul.client li:first-child, footer .one ul.rede li:first-child, footer .one ul.nissan li:first-child {
+        background: url("./images/setavermelha.png");
+        background-repeat: no-repeat;
+        background-size: 10px 8px;
+        background-position: right;
+        display: block; } }
+    @media (max-width: 767px) {
+      footer .one ul.client li, footer .one ul.rede li, footer .one ul.nissan li {
+        display: none; } }
+    footer .one ul.social li:first-child {
+      display: block;
+      margin: 0; }
+    footer .one ul.social li {
+      display: inline-block;
+      margin: 10px 6px 0 0; }
+      footer .one ul.social li a.facebook {
+        background: url("./images/facebook.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 25px;
+        width: 25px;
+        display: block; }
+      footer .one ul.social li a.twitter {
+        background: url("./images/twitter.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 25px;
+        width: 25px;
+        display: block; }
+      footer .one ul.social li a.instagram {
+        background: url("./images/instagram.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 25px;
+        width: 25px;
+        display: block; }
+      footer .one ul.social li a.youtube {
+        background: url("./images/youtube.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 25px;
+        width: 25px;
+        display: block; }
+  footer .container-fluid {
+    border-top: 1px solid #1c1c1c;
+    margin: 10px 0 0 0; }
+    @media (max-width: 767px) {
+      footer .container-fluid .container {
+        padding: 0px; } }
+    footer .container-fluid .container .two {
+      padding: 10px 0 0 0; }
+      @media (max-width: 767px) {
+        footer .container-fluid .container .two .col-12 {
+          border-bottom: 1px solid #1c1c1c;
+          padding: 0px; } }
+      @media (max-width: 767px) {
+        footer .container-fluid .container .two ul {
+          padding: 0 15px; } }
+      footer .container-fluid .container .two ul li {
+        display: inline-block;
+        margin: 0 20px 0 0; }
+        @media (max-width: 767px) {
+          footer .container-fluid .container .two ul li {
+            display: block; } }
+        footer .container-fluid .container .two ul li.nissan {
+          color: #fff;
+          font-size: 13px; }

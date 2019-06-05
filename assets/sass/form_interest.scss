@@ -1,0 +1,88 @@
+.formInterest {
+  display: none;
+}
+.screen-reader-response {
+  display: none;
+}
+.form-interest {
+  background: #c30c29;
+  padding: 40px;
+  float: left;
+  position: relative;
+  bottom: 10px;
+  display: none;
+  @media (max-width: 767px) {
+    padding: 20px;
+    bottom: 76px;
+  }
+  p {
+    font-family: "nissan_brandlight";
+    font-size: 15px;
+    color: #ffffff;
+  }
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "nissan_brandbold";
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 24px;
+  }
+  h3 {
+    text-align: center;
+    font-family: "nissan_brandlight";
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .form-group {
+    font-family: "nissan_brandregular";
+    font-size: 14px;
+    color: #777777;
+    .wpcf7-not-valid-tip {
+      color: #ffffff;
+      font-family: "nissan_brandlight";
+    }
+    input {
+      border: none;
+      border-radius: 0;
+    }
+    select {
+      border: none;
+      border-radius: 0;
+    }
+  }
+  .store {
+    background: #c9253f;
+    color: #ffffff;
+    padding: 15px;
+    p {
+      font-family: "nissan_brandlight";
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  .btn-enviar {
+    input {
+      background: #343434;
+      font-family: "nissan_brandbold";
+      color: #fefefe;
+      width: 100%;
+      padding: 13px;
+      border: none;
+      text-transform: uppercase;
+      &::after {
+        position: relative;
+        left: 10px;
+        content: url("./images/setabranca.png");
+        // background: url("./images/setabranca.png");
+        // background-repeat: no-repeat;
+        // background-size: 100%;
+        // background-position: center;
+        // height: 5px;
+        // width: 5px;
+      }
+    }
+  }
+}

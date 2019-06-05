@@ -1,0 +1,561 @@
+.list-cars {
+  display: block;
+  float: left;
+  width: 100%;
+  font-family: "nissan_brandregular"; }
+  @media (max-width: 991px) {
+    .list-cars {
+      margin: 0 0 30px 0; } }
+  @media (max-width: 991px) {
+    .list-cars .head-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; } }
+  .list-cars .head-list .head {
+    width: 33.333%;
+    float: left;
+    display: inline-block;
+    color: #777777;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px 0 9px 0; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .list-cars .head-list .head {
+        font-size: 13px; } }
+    @media (max-width: 991px) {
+      .list-cars .head-list .head {
+        width: 100%; } }
+    @media (max-width: 991px) {
+      .list-cars .head-list .head.show-number {
+        height: 50px;
+        text-align: center; }
+        .list-cars .head-list .head.show-number span {
+          line-height: 30px; } }
+    @media (max-width: 991px) and (max-width: 267px) {
+      .list-cars .head-list .head.show-number span {
+        line-height: 0px; } }
+  @media (max-width: 991px) and (max-width: 267px) {
+    .list-cars .head-list .head.show-number {
+      height: 58px; } }
+    .list-cars .head-list .head.search {
+      text-align: center; }
+      .list-cars .head-list .head.search input {
+        width: 60%;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        bottom: 13px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .list-cars .head-list .head.search input {
+            width: 70%; } }
+      .list-cars .head-list .head.search .btn-search {
+        background: url("./images/search.png");
+        background-repeat: no-repeat;
+        background-size: 22px 22px;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+        position: relative;
+        bottom: 5px; }
+      @media (max-width: 991px) {
+        .list-cars .head-list .head.search {
+          display: none; } }
+    @media (max-width: 991px) {
+      .list-cars .head-list .head.order {
+        padding: 5px;
+        background: #eeeeee;
+        margin: 10px 0; } }
+    @media (max-width: 991px) {
+      .list-cars .head-list .head.order select {
+        width: 100%;
+        background-color: #fff !important;
+        background-position-x: 96% !important;
+        height: 50px;
+        font-size: 17px;
+        padding: 0 30px; } }
+    @media (max-width: 991px) {
+      .list-cars .head-list .head.order .ordem {
+        display: none; } }
+    .list-cars .head-list .head.order select {
+      background: transparent;
+      border: none;
+      text-transform: uppercase;
+      color: #777777;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url("./images/setavermelha.png");
+      background-repeat: no-repeat;
+      background-size: 10px 8px;
+      background-position: right;
+      padding: 0 20px;
+      min-width: 85px; }
+      .list-cars .head-list .head.order select option {
+        background: #fff;
+        color: #777777;
+        text-transform: uppercase; }
+    .list-cars .head-list .head input {
+      background: transparent;
+      border: none;
+      text-transform: uppercase;
+      color: #777777; }
+  .list-cars .showcase {
+    display: block;
+    float: left;
+    width: 100%; }
+    .list-cars .showcase .product {
+      float: left;
+      width: 100%;
+      background: #eeeeee;
+      min-height: 150px;
+      margin: 0 0 10px 0;
+      padding: 8px;
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #777777; }
+      @media (max-width: 991px) {
+        .list-cars .showcase .product {
+          display: block;
+          height: auto;
+          max-height: initial; } }
+      .list-cars .showcase .product .image {
+        max-width: 310px;
+        display: inline-block;
+        overflow: hidden;
+        max-height: 229px;
+        background: #fff;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center; }
+        @media (max-width: 991px) {
+          .list-cars .showcase .product .image {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%; } }
+        .list-cars .showcase .product .image img {
+          max-width: 100%;
+          width: 100%; }
+      .list-cars .showcase .product.negociacao {
+        background: #f9f8f8; }
+        .list-cars .showcase .product.negociacao .image .status {
+          background: url("./images/emnegociacao.png");
+          background-repeat: no-repeat;
+          background-size: 90%;
+          background-position: center;
+          position: absolute;
+          z-index: 999;
+          height: 100%;
+          width: 100%;
+          max-width: 310px;
+          max-height: 179px; }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .list-cars .showcase .product.negociacao .image .status {
+              max-width: 245px; } }
+          @media (max-width: 991px) {
+            .list-cars .showcase .product.negociacao .image .status {
+              background-size: 55%;
+              width: 94%;
+              max-width: 100%;
+              max-height: 365px; } }
+          @media (max-width: 767px) {
+            .list-cars .showcase .product.negociacao .image .status {
+              width: 75%;
+              left: 12%;
+              max-height: 6%; } }
+        .list-cars .showcase .product.negociacao .image img {
+          opacity: 0.2; }
+        .list-cars .showcase .product.negociacao .description .info {
+          opacity: 0.2; }
+        .list-cars .showcase .product.negociacao .description > .local {
+          opacity: 0.2; }
+        @media (max-width: 991px) {
+          .list-cars .showcase .product.negociacao .description .seal {
+            display: block; } }
+        .list-cars .showcase .product.negociacao .description .seal img {
+          display: none; }
+        .list-cars .showcase .product.negociacao .description .value {
+          top: 10px;
+          position: relative;
+          opacity: 0.2; }
+          @media (max-width: 1199px) {
+            .list-cars .showcase .product.negociacao .description .value {
+              top: 0px; } }
+        .list-cars .showcase .product.negociacao .description .buttons {
+          bottom: 5px; }
+          .list-cars .showcase .product.negociacao .description .buttons .detail {
+            pointer-events: none;
+            cursor: not-allowed;
+            opacity: 0.2; }
+        .list-cars .showcase .product.negociacao .description .share {
+          bottom: 0px;
+          cursor: not-allowed;
+          opacity: 0.2; }
+          .list-cars .showcase .product.negociacao .description .share a {
+            pointer-events: none;
+            cursor: not-allowed; }
+      .list-cars .showcase .product.vendido {
+        background: #f9f8f8; }
+        .list-cars .showcase .product.vendido .image .status {
+          background: url("./images/vendido.png");
+          background-repeat: no-repeat;
+          background-size: 69%;
+          background-position: center;
+          position: absolute;
+          z-index: 999;
+          height: 100%;
+          width: 100%;
+          max-width: 310px;
+          max-height: 179px; }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .list-cars .showcase .product.vendido .image .status {
+              max-width: 245px; } }
+          @media (max-width: 991px) {
+            .list-cars .showcase .product.vendido .image .status {
+              background-size: 45%;
+              width: 94%;
+              max-width: 100%;
+              max-height: 365px; } }
+          @media (max-width: 767px) {
+            .list-cars .showcase .product.vendido .image .status {
+              width: 75%;
+              left: 12%;
+              max-height: 6%; } }
+        .list-cars .showcase .product.vendido .image img {
+          opacity: 0.2; }
+        .list-cars .showcase .product.vendido .description .info {
+          opacity: 0.2; }
+        .list-cars .showcase .product.vendido .description > .local {
+          opacity: 0.2; }
+        @media (max-width: 991px) {
+          .list-cars .showcase .product.vendido .description .seal {
+            display: block; } }
+        .list-cars .showcase .product.vendido .description .seal img {
+          display: none; }
+        .list-cars .showcase .product.vendido .description .value {
+          top: 10px;
+          position: relative;
+          opacity: 0.2; }
+          @media (max-width: 1199px) {
+            .list-cars .showcase .product.vendido .description .value {
+              top: 0px; } }
+        .list-cars .showcase .product.vendido .description .buttons {
+          bottom: 5px; }
+          .list-cars .showcase .product.vendido .description .buttons .detail {
+            opacity: 0.2;
+            pointer-events: none;
+            cursor: not-allowed; }
+        .list-cars .showcase .product.vendido .description .share {
+          bottom: 0px;
+          cursor: not-allowed;
+          opacity: 0.2; }
+          .list-cars .showcase .product.vendido .description .share a {
+            pointer-events: none;
+            cursor: not-allowed; }
+      .list-cars .showcase .product .description {
+        padding-left: 25px;
+        display: inline-block;
+        width: 555px; }
+        @media (max-width: 991px) {
+          .list-cars .showcase .product .description {
+            width: 100%;
+            padding: 15px; } }
+        @media (max-width: 767px) {
+          .list-cars .showcase .product .description {
+            padding: 10px 15px 5px 15px;
+            position: relative; } }
+        @media (max-width: 291px) {
+          .list-cars .showcase .product .description {
+            padding: 10px 5px 5px 5px; } }
+        .list-cars .showcase .product .description .info {
+          display: block;
+          padding: 5px 0 0 0; }
+          .list-cars .showcase .product .description .info .title {
+            font-family: "nissan_brandregular";
+            font-size: 23px;
+            text-transform: uppercase;
+            display: block;
+            line-height: 18px; }
+            .list-cars .showcase .product .description .info .title .red {
+              font-family: "nissan_brandbold";
+              color: #c71444; }
+          .list-cars .showcase .product .description .info .desc {
+            font-size: 12px;
+            display: inline-block; }
+        .list-cars .showcase .product .description .value {
+          display: inline-block;
+          line-height: 21px; }
+          @media (max-width: 1199px) {
+            .list-cars .showcase .product .description .value {
+              width: 100%;
+              display: block; } }
+          @media (max-width: 767px) {
+            .list-cars .showcase .product .description .value {
+              position: relative;
+              bottom: 5px;
+              margin-top: 15px; } }
+          @media (max-width: 1199px) {
+            .list-cars .showcase .product .description .value .first {
+              width: 57%;
+              display: inline-block; } }
+          @media (max-width: 991px) {
+            .list-cars .showcase .product .description .value .first {
+              width: 39%; } }
+          @media (max-width: 767px) {
+            .list-cars .showcase .product .description .value .first {
+              width: 47%; } }
+          .list-cars .showcase .product .description .value .first .of {
+            text-decoration: line-through;
+            font-size: 16px;
+            display: block; }
+            @media (max-width: 367px) {
+              .list-cars .showcase .product .description .value .first .of {
+                font-size: 15px; } }
+          .list-cars .showcase .product .description .value .first .descount {
+            display: block;
+            color: #c71444;
+            font-family: "nissan_brandbold"; }
+            @media (max-width: 367px) {
+              .list-cars .showcase .product .description .value .first .descount {
+                font-size: 15px;
+                white-space: pre-line; } }
+          .list-cars .showcase .product .description .value .total {
+            color: #c71444;
+            font-size: 27px;
+            font-family: "nissan_brandbold";
+            white-space: nowrap; }
+            @media (max-width: 1199px) {
+              .list-cars .showcase .product .description .value .total {
+                width: 40%;
+                display: inline-block; } }
+            @media (max-width: 767px) {
+              .list-cars .showcase .product .description .value .total {
+                width: 47%; } }
+            @media (max-width: 429px) {
+              .list-cars .showcase .product .description .value .total {
+                font-size: 23px; } }
+            @media (max-width: 367px) {
+              .list-cars .showcase .product .description .value .total {
+                font-size: 20px; } }
+            @media (max-width: 275px) {
+              .list-cars .showcase .product .description .value .total {
+                font-size: 17px; } }
+            .list-cars .showcase .product .description .value .total strong {
+              font-size: 16px; }
+              @media (max-width: 1199px) {
+                .list-cars .showcase .product .description .value .total strong {
+                  display: block; } }
+              @media (max-width: 767px) {
+                .list-cars .showcase .product .description .value .total strong {
+                  font-size: 15px; } }
+              @media (max-width: 500px) {
+                .list-cars .showcase .product .description .value .total strong {
+                  font-size: 14px; } }
+        .list-cars .showcase .product .description > .local {
+          display: inline-block;
+          font-size: 13px;
+          margin-top: 10px;
+          width: 75%; }
+          .list-cars .showcase .product .description > .local .color {
+            display: block; }
+        .list-cars .showcase .product .description .buttons {
+          display: inline-block;
+          padding: 0 0 0 28px;
+          position: relative;
+          bottom: 15px; }
+          @media (max-width: 1199px) {
+            .list-cars .showcase .product .description .buttons {
+              display: inline-block;
+              width: 75%;
+              padding: 0;
+              bottom: 0px; } }
+          @media (max-width: 767px) {
+            .list-cars .showcase .product .description .buttons {
+              display: block;
+              width: 100%;
+              margin-top: 7px; } }
+          .list-cars .showcase .product .description .buttons button {
+            border: none;
+            font-family: "nissan_brandregular";
+            text-transform: uppercase; }
+            .list-cars .showcase .product .description .buttons button.interest {
+              background: #c30c29;
+              padding: 10px 10px 10px 5px;
+              color: #fff;
+              width: 170px;
+              font-size: 13px;
+              margin-right: 5px; }
+              @media (max-width: 767px) {
+                .list-cars .showcase .product .description .buttons button.interest {
+                  width: 65%;
+                  margin: 0px;
+                  height: 50px; } }
+              .list-cars .showcase .product .description .buttons button.interest::after {
+                position: relative;
+                left: 10px;
+                content: url("./images/setabranca.png"); }
+                @media (max-width: 291px) {
+                  .list-cars .showcase .product .description .buttons button.interest::after {
+                    display: none; } }
+            .list-cars .showcase .product .description .buttons button.detail {
+              background: #ffffff;
+              color: #777777;
+              font-size: 11px;
+              padding-right: 15px;
+              width: 122px;
+              height: 39px;
+              line-height: 13px;
+              position: relative;
+              bottom: 7px; }
+
+@-moz-document url-prefix() {
+  .list-cars .showcase .product .description .buttons button.detail {
+    bottom: -5px;
+    font-size: 11px;
+    height: 40px; } }
+              @media (max-width: 767px) {
+                .list-cars .showcase .product .description .buttons button.detail {
+                  width: 33%;
+                  position: relative;
+                  top: 5px;
+                  display: -webkit-inline-box;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  padding: 0 15px;
+                  height: 50px;
+                  font-size: 10px; } }
+              @media (max-width: 433px) {
+                .list-cars .showcase .product .description .buttons button.detail {
+                  padding: 0 5px; } }
+              @media (max-width: 372px) {
+                .list-cars .showcase .product .description .buttons button.detail {
+                  top: -8px; } }
+              .list-cars .showcase .product .description .buttons button.detail::before {
+                position: relative;
+                top: 2px;
+                margin: 0 5px;
+                float: left;
+                content: url("./images/detail.png"); }
+                @media (max-width: 767px) {
+                  .list-cars .showcase .product .description .buttons button.detail::before {
+                    float: initial; } }
+                @media (max-width: 372px) {
+                  .list-cars .showcase .product .description .buttons button.detail::before {
+                    display: none; } }
+        .list-cars .showcase .product .description .seal {
+          display: inline-block;
+          position: relative;
+          bottom: 63px;
+          left: 70px; }
+          @media (max-width: 1199px) {
+            .list-cars .showcase .product .description .seal {
+              bottom: 15px;
+              left: 30px; } }
+          @media (max-width: 991px) {
+            .list-cars .showcase .product .description .seal {
+              left: 72px; } }
+          @media (max-width: 767px) {
+            .list-cars .showcase .product .description .seal {
+              position: absolute;
+              top: 15px;
+              left: 85%; } }
+          .list-cars .showcase .product .description .seal img {
+            width: 70%; }
+        .list-cars .showcase .product .description .share {
+          width: 100%;
+          text-align: right;
+          position: relative;
+          bottom: 10px;
+          padding: 0 25px 0 0; }
+          @media (max-width: 1199px) {
+            .list-cars .showcase .product .description .share {
+              width: 24%;
+              top: 10px;
+              display: inline-block; } }
+          @media (max-width: 767px) {
+            .list-cars .showcase .product .description .share {
+              width: 100%;
+              padding: 5px 0 5px 0;
+              text-align: center; } }
+          .list-cars .showcase .product .description .share span {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            bottom: 10px; }
+            @media (max-width: 1199px) {
+              .list-cars .showcase .product .description .share span {
+                display: none; } }
+          .list-cars .showcase .product .description .share .whatsapp {
+            background: url("./images/whats.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 30px;
+            width: 30px;
+            display: inline-block; }
+          .list-cars .showcase .product .description .share .facebook {
+            background: url("./images/facebook.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            margin-right: 5px; }
+  .list-cars .see-more {
+    width: 100%;
+    text-align: right;
+    float: left;
+    padding: 20px 0 0 0; }
+    .list-cars .see-more a {
+      width: 280px;
+      background: #c30c29;
+      font-family: "nissan_brandbold";
+      font-size: 14px;
+      color: #fefefe;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      border: none;
+      padding: 10px 75px; }
+      @media (max-width: 991px) {
+        .list-cars .see-more a {
+          width: 100%;
+          display: block;
+          margin-bottom: 10px; } }
+      .list-cars .see-more a.prev {
+        margin-right: 5px; }
+        .list-cars .see-more a.prev::before {
+          position: relative;
+          right: 15px;
+          content: url("./images/setabrancareturn.png"); }
+      .list-cars .see-more a.next::after {
+        position: relative;
+        left: 15px;
+        content: url("./images/setabranca.png"); }
+  .list-cars .texto-legal {
+    font-size: 11px;
+    color: #777777c4;
+    float: left;
+    display: block;
+    margin-top: 50px; }
+    @media (max-width: 767px) {
+      .list-cars .texto-legal {
+        margin-top: 30px; } }
+  .list-cars .message {
+    background: #c30c29;
+    color: #fff;
+    font-family: "nissan_brandbold";
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px; }

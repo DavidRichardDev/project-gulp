@@ -1,0 +1,76 @@
+body header {
+  font-family: "nissan_brandregular";
+  position: relative;
+  img {
+    &.banner {
+      width: 100%;
+      height: auto;
+    }
+    &.banner-mobile {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+  }
+  .container-fluid {
+    position: absolute;
+    top: 0;
+    .container {
+      // max-width: 1024px;
+      .logo {
+        max-height: 122px;
+        @media (max-width: 465px) {
+          max-height: 110px;
+        }
+        @media (max-width: 365px) {
+          max-height: 95px;
+        }
+        @media (max-width: 365px) {
+          max-height: 85px;
+        }
+      }
+    }
+  }
+  .container-fluid.texto {
+    position: absolute;
+    // bottom: 5vw;
+    top: 30vw;
+    @media (max-width: 991px) {
+      top: 90vw;
+    }
+    h2 {
+      font-family: "nissan_brandbold";
+      text-transform: uppercase;
+      font-size: 1.9vw;
+      text-align: center;
+      font-weight: 900;
+      color: #343434;
+      @media (max-width: 991px) {
+        font-size: 4vw;
+      }
+    }
+    h3 {
+      font-family: "nissan_brandregular";
+      font-size: 1.5vw;
+      text-align: center;
+      text-transform: uppercase;
+      color: #c30c29;
+      line-height: 10px;
+      @media (max-width: 991px) {
+        font-size: 3.8vw;
+      }
+    }
+    p {
+      font-family: "nissan_brandlight";
+      font-size: 0.8vw;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 3vw;
+      @media (max-width: 991px) {
+        font-size: 2.5vw;
+        line-height: 7vw;
+      }
+    }
+  }
+}
